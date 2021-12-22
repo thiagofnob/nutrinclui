@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Oxygen:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body{
+    height: 100%;
+    font-family: 'Oxygen', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    /* background-color: #FFC7D4; */
+}
+
+.content{
+        width: 80%;
+        height: 100%;
+        max-width: 1440px;
+        margin: auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 50px;
+    margin-right: 5px;
+}
+
+.logo p{
+    font-size: 30px;
+}
+
+nav a{
+    margin-right: 40px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #E35640;
+}
+
+.banner{
+    width: 100%;
+    height: calc(100vh - 80px);
+}
+
+.bbg{
+    width: 100%;
+    height: 100%;
+    background:  linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0.01%, rgba(33, 33, 33, 0.7) 99.48%), url('../images/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bbg h1{
+    margin-right: 60px;
+    padding-top: 70vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+main{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main > .content{
+    align-items: flex-start;
+}
+
+h2{
+    font-family: 'EB Garamond';
+    font-size: 32px;
+}
+
+h3{
+    font-family: 'EB Garamond';
+    font-style: italic;
+}
+
+.left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro{
+    width: 90%;
+    flex-direction: column;
+}
+
+.intro p{
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.intro img{
+    width: 80%;
+    margin: auto;
+}
+
+.contact{
+    margin-top: 80px;
+    width: 100%;
+}
+
+.contact h2{
+    margin-bottom: 20px;
+}
+
+.contact-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.address{
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.address img{
+    width: 20vw;
+}
+
+.social{
+    width: 50%;
+}
+
+.face, .blog, .insta{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social img{
+    width: 40px;
+    padding-bottom: 10px;
+}
+
+#blog{
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 0;
+}
+
+.phone{
+    width: 50%;
+}
+
+.news{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.news img{
+    width: 30px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.news-form{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.news-form input{
+    width: 200px;
+    height: 30px;
+}
+
+.btn{
+    width: 80px;
+    height: 30px;
+    background-color: #E35640;
+    border: none;
+    border-radius: 2px;
+}
+
+.btn:hover{
+    background-color: #048503;
+}
+
+aside{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+aside h2, h3{
+    margin-bottom: 20px;
+}
+
+#color-calendar{
+    width: 80%;
+    margin-bottom: 80px;
+}
+
+article{
+    margin-bottom: 30px;
+}
+
+article img{
+    width: 70%;
+}
+
+/* Início do Parallax Scrolling */
+
+.parallax{
+  background-image: url("../images/banner.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Início da calculadora */
+
+.calculadora{
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form, table{
+    width: 40%;
+    border-radius: 2px;
+}
+
+form{
+    margin-top: 10px;
+}
+
+form fieldset{
+    padding: 8px;
+    border-radius: 5px;
+}
+
+form input, form button{
+    height: 35px;
+}
+
+form input{
+    font-family: 'Oxygen', sans-serif;
+    width: 100%;
+    height: 35px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+form input:focus {
+    color: rgb(0, 0, 0);
+    background-color: #FFC7D4;
+    border: none
+}
+
+form input:focus::placeholder{
+    color: rgba(128, 128, 128, 0.4);
+}
+
+form button {
+    width: 25%;
+    height: 35px;
+    margin-left: 10px;
+    float: right;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 0.9rem;
+    background-color: #E35640;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+
+form button:hover{
+    background-color: #048503;
+}
+
+table{
+    margin-top: 10px;
+    border: 1px solid grey;
+    font-size: 0.9rem;
+}
+
+table th, table td {
+    padding: 3px;
+    border: 1px solid grey;
+}
+
+table th {
+    font-weight: bold !important;
+}
+
+table thead tr {
+    background-color: grey;
+    color: #ffffff;
+}
+
+/* 
+    (odd) para linhas ímpares e 
+    (even) para linhas pares
+*/
+
+table tbody tr:nth-child(odd) { background-color: white; }
+
+table tbody tr:nth-child(even) { background-color: #dadada; }
+
+table tbody { text-align: center; }
+
+table td:first-of-type { text-align: left; }
+
+/* Fim da Calculadora */
+
+footer{
+    height: 60px;
+}
+
+footer p{
+    text-align: center;
+}
+
+@media (max-width: 800px){
+    .content{
+        width: 90%;
+    }
+
+    nav a{
+        font-size: 14px;
+        margin-right: 8px;
+    }
+    
+    .banner{
+        height: 33vh;
+    }
+
+    .bbg{
+        height: 33vh;
+    }
+
+    .bbg h1{
+        font-size: 26px;
+        padding-right: 10px;
+        padding-top: 27vh;
+    }
+
+    .news-form input{
+        width: 200px;
+        height: 30px;
+    }
+
+    #color-calendar{
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px){
+    header{
+        height: 70px;
+    }
+
+    .logo img{
+        width: 40px;
+    }
+
+    .logo p{
+        font-size: 28px;
+    }
+    
+    nav a{
+        display: none;
+    }
+
+    .banner{
+        height: 33vh;
+    }
+
+    .bbg{
+        height: 33vh;
+    }
+
+    .bbg h1{
+        font-size: 1em;
+        margin-right: 20px;
+        padding-top: 27vh;
+    }
+   
+    main > .content{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left{
+        width: 110%;
+    }
+
+    aside{
+        margin-top: 50px;
+        width: 110%;
+    }
+
+    #color-calendar{
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .calculadora, .calc, table{
+        width: 90%;
+        
+    }
+}
+

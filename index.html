@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/carroticon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-basic.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-glass.css" />
+    <script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.min.js"></script>
+    <title>Nutrinclui</title>
+</head>
+<body>
+
+    <header>
+        <div class="content flex">
+            <div class="logo">
+                <img src="images/carroticon.svg" alt="Desenho de uma cenoura">
+                <p class="logo">nutrinclui</p>
+            </div>
+            <nav class="links">
+                <a href="#">HOME</a>
+                <a href="#">AGENDA</a>
+                <a href="#">RECEITAS</a>
+                <a href="#">GUIAS</a>
+                <a href="#">CONTATO</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="bbg">
+            <h1>Nutrinclui: Nutrição e Alimentação Saudável</h1>
+        </div>
+    </section>
+    
+    <main>
+        <div class="content flex">
+        <div class="left">
+
+            <section class="intro">            
+                <h2>Quem somos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dicta nemo minus magnam neque deleniti at nihil laboriosam facere, dolore libero dolor repellendus veritatis explicabo odit nostrum harum illo enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam possimus dignissimos, voluptas maxime similique enim optio, obcaecati sunt earum magni harum, exercitationem aliquid quaerat veritatis incidunt! Quae, quisquam. Facilis, amet.</p>
+                <img src="images/nutritionists.png" alt="Desenho de uma equipe de nutricionistas" class="flex-center">
+            </section>
+
+            <section class="contact">
+                <h2>Contato</h2>
+                <div class="contact-cards">
+                    <div class="address">
+                        <h3>Endereço</h3>
+                        <img src="images/map.jpg" alt="Mapa com a localização do consultório">
+                        <p>Avenida Central, 2000.</p>
+                        <p>Sé, São Paulo - SP</p>
+                    </div>
+
+                    <div class="social">
+                        <h3>Redes Sociais</h3>
+                        <div class="face">
+                            <img src="images/facebook.svg" alt="Ícone do Facebook" id="face-img">
+                            <p>/nutrinclui</p>
+                        </div>
+                        <div class="blog">
+                            <img src="images/blogger.svg" alt="Ícone do Blog" id="blog">
+                            <p>/nutrinclui</p>
+                        </div>
+                        <div class="insta">
+                            <img src="images/instagram.svg" alt="Ícone do Instagram" id="insta-img">
+                            <p>@nutrinclui</p>
+                        </div>
+                    </div>
+
+                    <div class="phone">
+                        <h3>Telefones</h3>
+                        <p>+55 11 99111-9922</p>
+                        <p>+55 11 99111-9933</p>
+                    </div>
+                    
+                </div>
+
+                <div class="news">
+                    <h2>Newsletter</h2>
+                    <img src="images/newsletter.svg" alt="Ícone de mala direta newsletter">
+                </div>
+                <form class="news-form">
+                    <input type="text">
+                    <button class="btn">Inscrever</button>
+                    
+                </form>
+            </section>
+
+        </div>
+
+        <aside>
+            <section class="schedule">
+                <h2>Agenda</h2>
+                <h3>Consultas</h3>
+                <div id="color-calendar"></div>
+            </section>
+            <section class="receitas">
+                <h2>Receitas</h2>
+                <article>
+                    <img src="images/risoto.jpg" alt="Foto de risoto de alho poró">
+                    <h3>Risoto de alho poró</h3>
+                </article>
+                <article>
+                    <img src="images/cilantro.jpg" alt="Foto de feijão cozido">
+                    <h3>Feijão com tomate e coentro</h3>
+                </article>
+                <article>
+                    <img src="images/pepper.jpg" alt="Foto de pimentão assado">
+                    <h3>Pimentão assado</h3>
+                </article>
+            </section>
+        </aside>
+        </div>
+    </main>
+
+    <div class="parallax">
+        
+    </div>
+
+    <section class="calculadora content">
+        <h2>Calculadora de IMC</h2>
+        <form class="calc">
+            <fieldset>
+                <input type="text" id="nome" placeholder="Nome">
+                <input type="number" id="altura" placeholder="Altura em Metros ex 1.67">
+                <input type="number" id="peso" placeholder="Peso em Quilos">
+                <button type="button" onclick="calcular()">Calcular</button>
+                <button type="reset">Limpar</button>
+            </fieldset>
+        </form>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Altura</th>
+                        <th>Peso</th>
+                        <th>IMC</th>
+                        <th>Situação</th>
+                    </tr>
+                </thead>
+
+                <tbody id="cadastro"></tbody>
+            </table>
+        </section>
+    </section>
+
+
+
+
+    <footer class="flex-center">
+        <p>&copy; Todos os direitos reservados - 2022</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
